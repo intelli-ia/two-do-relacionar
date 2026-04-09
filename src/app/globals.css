@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+/* ─── Fontes customizadas ────────────────────────────────────────────────────
+   Coloque os arquivos em /public/fonts/ e descomente abaixo quando tiver os arquivos
+   ─────────────────────────────────────────────────────────────────────────── */
+
+@font-face {
+  font-family: 'Mandalika';
+  src: url('/fonts/mandalika_2/Mandalika DEMO.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Afterglow';
+  src: url('/fonts/Afterglow-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme inline {
+  /* Brand colors */
+  --color-primary:    #e45a53;
+  --color-secondary:  #4b8f87;
+  --color-dark:       #0f0d0c;
+  --color-light:      #f5f0eb;
+
+  /* Typography
+     Troque 'Georgia' por 'Mandalika' quando a fonte estiver disponível */
+  --font-display: 'Mandalika', Georgia, 'Times New Roman', serif;
+  --font-accent:  'Afterglow', cursive;
+  --font-body:    'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--color-dark);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+  hyphens: none;
+}
+
+p {
+  text-wrap: pretty;
+}
+/* ─── Premium Buttons ─────────────────────────────────────────────────────── */
+.btn-premium {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 9999px;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  transition: background-color 0.4s ease, letter-spacing 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-premium:hover {
+  background-color: var(--color-secondary);
+  letter-spacing: 0.28em;
+}
+
+.btn-premium:active {
+  transform: scale(0.98);
+}
+
+.btn-shimmer {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: linear-gradient(
+    105deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.22) 50%,
+    transparent 70%
+  );
+  background-size: 200% 100%;
+  animation: premium-shimmer 2.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes premium-shimmer {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
