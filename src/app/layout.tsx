@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Two do Design — Papelaria de Luxo & Marketing de Relacionamento",
+  title: "Two do Design — Marketing de Relacionamento",
   description:
-    "Papelaria de luxo para eventos inesquecíveis e marketing de relacionamento que transforma marcas em experiências.",
+    "Transforme relacionamentos em resultados. Descubra como o marketing de relacionamento pode multiplicar seus lucros.",
 };
 
 export default function RootLayout({
