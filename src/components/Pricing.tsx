@@ -61,14 +61,14 @@ export default function Pricing() {
           {/* Pricing Details */}
           <RevealItem delay={400} className="mb-10">
             <p className="text-white/60 text-sm uppercase tracking-[0.2em] mb-4">
-              Acesso vitalício por apenas 12x de
+              Acesso vitalício por apenas 5x de
             </p>
             <div className="flex items-center justify-center gap-2">
               <span
                 className="text-6xl md:text-8xl font-normal"
                 style={{ fontFamily: "var(--font-display)", color: "#e45a53" }}
               >
-                R$ 3,90
+                R$ 8,83
               </span>
             </div>
             <p className="text-white/60 text-sm mt-4">
@@ -79,7 +79,7 @@ export default function Pricing() {
           {/* CTA Button */}
           <RevealItem delay={500} className="flex justify-center mb-10">
             <a
-              href="https://pay.hotmart.com/YOUR_HOTMART_LINK" // Placeholder for checkout
+              href="https://pay.hotmart.com/U105311633U" // Placeholder for checkout
               target="_blank"
               rel="noopener noreferrer"
               className="btn-premium px-12 py-5 text-sm md:text-base w-full md:w-auto"

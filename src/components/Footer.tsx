@@ -37,7 +37,7 @@ export default function Footer() {
           da sua marca?
         </h2>
         <a
-          href="https://pay.hotmart.com/YOUR_HOTMART_LINK"
+          href="https://pay.hotmart.com/U105311633U"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-premium px-10 py-5 text-sm uppercase tracking-[0.2em] mt-2 group"
