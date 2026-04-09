@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'Mandalika';
-  src: url('/fonts/mandalika_2/Mandalika DEMO.otf') format('opentype');
+  src: url('/fonts/mandalika-regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -38,7 +38,10 @@
   box-sizing: border-box;
 }
 
-html,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
 body {
   height: 100%;
 }

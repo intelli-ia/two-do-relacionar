@@ -187,7 +187,7 @@ export default function ProductAccess() {
         {/* Botão Call to Action */}
         <RevealItem delay={600} className="mt-8">
           <a
-            href="#diagnostico"
+            href="#pricing"
             className="btn-premium px-10 py-5 text-sm"
           >
             <span className="btn-shimmer" aria-hidden="true" />

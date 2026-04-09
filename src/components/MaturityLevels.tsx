@@ -1,6 +1,5 @@
 "use client";
 
-import { useRef } from "react";
 import { SplitText } from "./SplitText";
 
 const LEVELS = [
@@ -61,10 +60,10 @@ export default function MaturityLevels() {
             style={{ fontFamily: "var(--font-display)", color: "var(--color-dark)" }}
           />
           <p
-            className="text-sm md:text-xl font-light leading-relaxed max-w-2xl"
+            className="text-base md:text-xl font-light leading-relaxed max-w-2xl"
             style={{ color: "var(--color-dark)", opacity: 0.6 }}
           >
-            Através do sistema de pontuação do Método RELACIONAR, você terá clareza sobre o estágio atual do seu negócio e o caminho para se tornar uma&nbsp;referência.
+            Tenha acesso a indicadores precisos que o nosso diagnóstico fornece, com gráficos reais e planos de ação claros para você retomar o controle total do sucesso da sua marca.
           </p>
         </div>
 
@@ -104,7 +103,7 @@ export default function MaturityLevels() {
 
         <div className="mt-20 flex flex-col items-center">
             <a
-              href="#contato"
+              href="#pricing"
               className="btn-premium px-10 py-5 text-xs shadow-lg"
             >
               <span className="btn-shimmer" aria-hidden="true" />

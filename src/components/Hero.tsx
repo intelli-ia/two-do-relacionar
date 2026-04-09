@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { SplitText } from "./SplitText";
+import Logo from "./Logo";
 
 const TICKER_PHRASES = [
   "Relevância de Marca",
@@ -43,13 +44,18 @@ export default function Hero() {
       {/* ── Main Layout ── */}
       <div className="relative z-20 min-h-screen flex flex-col w-full max-w-7xl mx-auto px-8 md:px-16 lg:px-24">
 
+        {/* ── Logo ── */}
+        <div className="pt-10 md:pt-16 flex justify-center">
+          <Logo className="w-24 md:w-32 h-auto text-white opacity-80 hover:opacity-100 transition-opacity duration-300" />
+        </div>
+
         {/* ── Centered Content ── */}
-        <div className="flex-1 flex flex-col justify-center items-center text-center mt-20 md:mt-24 pb-32">
-          
+        <div className="flex-1 flex flex-col justify-center items-center text-center mt-10 md:mt-12 pb-32">
+
           <div className="max-w-4xl w-full flex flex-col items-center">
 
             {/* Eyebrow */}
-            <div className="inline-flex items-center justify-center px-4 py-2 rounded-full mb-8" style={{ backgroundColor: "rgba(228,90,83,0.1)", border: "1px solid rgba(228,90,83,0.2)"}}>
+            <div className="inline-flex items-center justify-center px-4 py-2 rounded-full mb-8" style={{ backgroundColor: "rgba(228,90,83,0.1)", border: "1px solid rgba(228,90,83,0.2)" }}>
               <span className="w-2 h-2 rounded-full mr-2 animate-pulse" style={{ backgroundColor: "var(--color-primary)" }}></span>
               <p
                 className="text-[9px] md:text-[11px] tracking-[0.3em] uppercase"
@@ -78,13 +84,13 @@ export default function Hero() {
               className="text-base md:text-xl lg:text-2xl font-light leading-relaxed mb-10 max-w-2xl mx-auto"
               style={{ color: "rgba(255,255,255,0.7)" }}
             >
-              Onde sua marca está perdendo <span style={{ color: "#fff", fontWeight: 500 }}>dinheiro</span> e você não vê. Descubra o nível de maturidade estratégica do seu negócio através do nosso questionário e aulas práticas.
+              Descubra através de um questionário de 10 pilares onde a sua marca está perdendo dinheiro por não saber se relacionar com seus clientes.
             </h2>
 
             {/* CTA */}
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
               <a
-                href="#diagnostico"
+                href="#pilares"
                 className="btn-premium px-10 py-5 text-sm shadow-2xl shadow-[var(--color-primary)]/20"
               >
                 <span className="btn-shimmer" aria-hidden="true" />
